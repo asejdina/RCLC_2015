@@ -1,0 +1,114 @@
+#wrapper {
+  width: 900px;
+  margin: 20px auto;
+}
+body {
+    background-color: purple;
+}
+
+h1 {
+    background-color: #00ff00;
+}
+
+p {
+    background-color: rgb(255,0,255);
+    font-style: italic;
+    font-size: 2em;
+}
+
+//===========================//
+
+.biobox  {
+     background-color:#pink;
+     width:25%;
+     height: 300px;
+  }
+.image  {
+  background-color: black;
+  width: 55%;
+  height: 50%;
+
+}
+
+.biobox  {
+     background-color:#pink;
+     width:25%;
+     height: 300px;
+  }
+.image  {
+  background-color: black;
+  width: 55%;
+  height: 50%;
+
+}
+
+.biobox  {
+     background-color:#pink;
+     width:25%;
+     height: 300px;
+  }
+.image  {
+  background-color: black;
+  width: 55%;
+  height: 50%;
+
+}
+
+.biobox  {
+     background-color:#pink;
+     width:25%;
+     height: 300px;
+  }
+.image  {
+  background-color: black;
+  width: 55%;
+  height: 50%;
+
+}
+
+
+//===========================================//
+
+body {
+  background-color: purple;
+  font-family: Georgia;
+  color: red;
+  text-align: center;
+}
+form {
+  background-color: blue;
+  width: 40%;
+  height: 400px;
+  position:relative;
+  display:block;
+  text-align: center;
+  margin-left:30%;
+  border: 2px solid white;
+}
+
+h5 {
+  display: block;
+}
+.image {
+  background-color: black;
+  width: 300px;
+  height: 200px;
+}
+
+  h1 {
+    color: blue;
+  }
+
+  #about {
+    width: 500px
+    height: 600px
+  }
+
+#image{
+  background-image: url("./images/trackng.jpeg");
+}
+
+
+#wrapper {
+  text-align: center;
+}
