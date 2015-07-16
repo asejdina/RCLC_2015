@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>South Bend Solutions</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src='http://code.jquery.com/jquery-2.0.3.min.js'></script>
+    <script src='http://www.parsecdn.com/js/parse-1.4.2.min.js'></script>
+    <script src='form.js'></script>
+  </head>
+
+  <body>
+     <div id="wrapper">
+       <h1>Sign up Page</h1>
+
+       <form method='post'>
+        <h2>Name:</h2>
+        <input type="text" name="name" id="name">
+        <h2>Select your age group:</h2>
+        <select id="agerange" name="Select your age group">
+          <option value="under 11">under 11</option>
+          <option value="11-13">11-13</option>
+          <option value="14-16">14-16</option>
+          <option value="17-19">17-19</option>
+          <option value="20+">20+</option>
+        <textarea id="comments" name="comments" cols="25" rows="5">
+         Enter your story here...
+        </textarea>
+        Select image to upload: <input type='file' id='profilePhotoFileUpload'/>
+        <button id='submit' type='button'>Submit</button>
+     </form>
+    </div>
+  </body>
+</html>

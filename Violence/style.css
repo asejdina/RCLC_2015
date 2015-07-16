@@ -82,30 +82,36 @@ form {
   background-color: blue;
   width: 40%;
   height: 400px;
-  position:relative;
-  display:block;
   text-align: center;
   margin-left:30%;
   border: 2px solid white;
 }
 
-h5 {
+h2 {
   display: block;
 }
+
+textarea {
+  display: block;
+  margin: 30px 0px 10px 95px;
+}
+
 .image {
-  background-color: black;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 300px;
   height: 200px;
 }
 
-  h1 {
-    color: blue;
-  }
+h1 {
+  color: blue;
+}
 
-  #about {
-    width: 500px
-    height: 600px
-  }
+#about {
+  width: 500px
+  height: 600px
+}
 
 #image{
   background-image: url("./images/trackng.jpeg");

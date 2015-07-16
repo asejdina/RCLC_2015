@@ -1,0 +1,85 @@
+/* Home Page */
+
+#gallery{
+  text-align: center;
+  color:black;
+  background-color:#89CCCC;
+
+}
+
+#whats{
+  background-color: purple;
+  color:white;
+  text-align: center;
+  width: 200 px;
+  height: 200px;
+}
+
+h2{
+  background-color: purple
+}
+
+#idea{
+  text-align:center;
+  color:black;
+  background-color:#89CCCC;
+}
+
+p{
+  text-align:center;
+  color:black;
+  background-color: #89CCCC;
+}
+
+h1{
+  background-color: purple;
+}
+
+
+
+
+
+/* Registration */
+
+#wrapper {
+  width: 900px;
+  margin: 20px auto;
+}
+
+h1{
+  text-align: center;
+  color:#46CC38;
+}
+
+h2{
+  text-align: center;
+  color:#46CC38
+}
+
+body{
+  background-color:#960885;
+}
+
+h3{
+  color:#46CC38
+}
+
+#logo {
+
+background-image: url("./images/Logo.png");
+width: 20%;
+height: 200px;
+background-size: cover;
+
+}
+button{
+  width: 150px;
+  height: 50px;
+  background-color:#89CCCC;
+  color: white;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+button:hover{
+  background-color: transparent;
+}
