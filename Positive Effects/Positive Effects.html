@@ -13,19 +13,57 @@
 
   <body>
 
-    <div id="logo"><img src="./PE logo (2).png" alt="logo" height="100" width="100"/z></div>
-    <div id="wrapper">
-      <input type="checkbox" name="option 1" value=Good>Good<br>
-      <input type="checkbox" name="option 2" value=Bad>Bad<br>
-      <a href="Form.html">TagIt!</a>
+    <div id="formModal">
+
+      <div id="formWrapper">
+        <a class="closeModal">X</a>
+
+        <h1>Register A New Tag</h1>
+
+        <form method='post' class="tagit">
+          Comments: <textarea name='comments' id='comments'></textarea>
+          Area: <textarea name='area' id='area'/></textarea>
+          <div id='radioButtons'>
+            Good <input type='radio' name='radio' id='good'>
+            Bad <input type='radio' name='radio' id='bad'>
+          </div>
+          Select image to upload: <input type='file' id='profilePhotoFileUpload'/>
+          <button id='submitPhoto' type='button' class="submitButton">Submit</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="artModal">
+      <a class="closeModal">X</a>
+    </div>
+
+
+    <div id="topbar">
+
+      <div id="logo"></div>
+
+      <div id="wrapper">
+
+        <h5>Select the type of tag you would like to view.</h5>
+
+        <input type="checkbox" name="option 1" value=Good>
+        <h3>Good</h3>
+
+        <input type="checkbox" name="option 2" value=Bad>
+        <h3>Bad</h3>
+
+      </div>
+
+      <div id="buttonWrapper">
+        <button class="newTag">New Tag</button>
+        <!-- <a href="Form.html"><button>New Tag</button></a> -->
+        <a href="pe_about.html"><button>About Us</button></a>
+      </div>
+
     </div>
 
     <div id="map"></div>
-
-
-
-
-
 
 
   </body>
