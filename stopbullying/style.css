@@ -1,0 +1,46 @@
+body {
+  background-color:pink;
+  font-family:Arial;
+  color:blue;
+  text-align:center
+}
+
+.oneresult {
+  font-family:cursive;
+  color:blue;
+  width:100%;
+  height:75px;
+  text-align:left;
+}
+.oneresult > h1 {
+  position:relative;
+  display:inline-block;
+}
+#about {
+  text-align:center;
+}
+
+h2{
+  color:black;
+  text-align:middle;
+}
+
+#image {
+  background-image:url("http://www.clipartbest.com/cliparts/4cb/4rb/4cb4rbLdi.gif");
+  width:100%;
+  height:300px;
+  background-size:contain;
+}
+
+#signup {
+  background-color:pink;
+  width:1000px;
+  height:1000px;
+}
+
+button{
+  color:white;
+  height:75px;
+  width:175px;
+  background-color:blue;
+}

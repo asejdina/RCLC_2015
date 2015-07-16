@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <script src='http://code.jquery.com/jquery-2.0.3.min.js'></script>
+    <script src='http://www.parsecdn.com/js/parse-1.4.2.min.js'></script>
+    <script src='./main.js'></script>
+    <title>Register Incident</title>
+  </head>
+  <body>
+    <div id="signup">
+      <form method='post'>
+        What is the Issue: <input type='text' name='issue' id='issue'/>
+        Where are you located: <input type='text' name='location' id='location'/>
+        Issue Type:
+        <div id='radioButtons'>
+          Verbal <input type='radio' name='radio' id='verbal'>
+          Physical <input type='radio' name='radio' id='physical'>
+          Relational <input type='radio' name='radio' id='relational'>
+          CyberBullying <input type='radio' name='radio' id='cyberbullying'>
+        </div>
+        <button id='submit' type='button'>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
