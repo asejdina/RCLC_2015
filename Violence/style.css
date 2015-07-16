@@ -3,7 +3,7 @@
   margin: 20px auto;
 }
 body {
-    background-color: purple;
+    background-color: white;
 }
 
 h1 {
@@ -16,58 +16,61 @@ p {
     font-size: 2em;
 }
 
-//===========================//
+button {
+  width: 175px;
+  height: 75px;
+  font-size: 1.5em;
+  background-color: #00ff00;
+  color: blue;
+}
 
-.biobox  {
-     background-color:#pink;
-     width:25%;
-     height: 300px;
-  }
-.image  {
-  background-color: black;
-  width: 55%;
-  height: 50%;
+button:hover {
+  color: #00ff00;
+  background-color: blue;
+}
 
+#logo {
+  background-image: url('./images/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+
+}
+
+/*//===========================//*/
+
+#bios {
+  width: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-top: 2px solid blue;
+  padding-top: 40px;
 }
 
 .biobox  {
      background-color:#pink;
-     width:25%;
-     height: 300px;
-  }
-.image  {
-  background-color: black;
-  width: 55%;
-  height: 50%;
-
+     width:24%;
+     height: 400px;
+     position: relative;
+     display: inline-block;
 }
 
-.biobox  {
-     background-color:#pink;
-     width:25%;
-     height: 300px;
-  }
 .image  {
   background-color: black;
-  width: 55%;
+  width: 100%;
   height: 50%;
-
+  margin: 0 auto;
 }
-
-.biobox  {
-     background-color:#pink;
-     width:25%;
-     height: 300px;
-  }
-.image  {
-  background-color: black;
-  width: 55%;
-  height: 50%;
-
+.description {
+  overflow: scroll;
+  height: inherit;
 }
 
 
-//===========================================//
+/*//===========================================//*/
 
 body {
   background-color: purple;
