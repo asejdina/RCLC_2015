@@ -2,18 +2,25 @@
   width: 900px;
   margin: 20px auto;
 }
+
 body {
-    background-color: white;
+  background-color: purple;
+  font-family: Georgia;
+  color: red;
+  text-align: center;
 }
 
+
 h1 {
-    background-color: #00ff00;
+    color: #00ff00;
+    font-size: 5em;
 }
 
 p {
-    background-color: rgb(255,0,255);
+    background-color: purple;
     font-style: italic;
     font-size: 2em;
+    color: white;
 }
 
 button {
@@ -72,12 +79,7 @@ button:hover {
 
 /*//===========================================//*/
 
-body {
-  background-color: purple;
-  font-family: Georgia;
-  color: red;
-  text-align: center;
-}
+
 form {
   background-color: blue;
   width: 40%;
@@ -102,10 +104,6 @@ textarea {
   background-position: center;
   width: 300px;
   height: 200px;
-}
-
-h1 {
-  color: blue;
 }
 
 #about {
