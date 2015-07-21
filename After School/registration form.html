@@ -5,6 +5,9 @@
     <title> Registration Form </title>
 
       <link rel="stylesheet" href="./style.css">
+      <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+      <script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+      <script src="register.js"></script>
 
   </head>
 <div id= "logo"></div>
@@ -14,15 +17,26 @@
       <h1>Register Your Destination</h1>
       <form>
         <h2>Destination Name:</h2>
-        <input type="text" name="destinationName">
+        <input type="text" name="destinationName" id="destinationName">
+
         <h2>Address:</h2>
-        <input type="text" name="address">
-        <h2>Activities:</h2>
-        <input type="text" name="activities">
+        <input type="text" name="destinationAddress" id="destinationAddress">
+
+        <h2>Programs:</h2>
+        <input type="text" name="destinationPrograms" id="desitinationPrograms">
+
         <h2>Website:</h2>
-        <input type="text" name="website">
-        <h2>Cost of Program:</h2>
-        <input type="text" name="address">
+        <input type="text" name="website" id="website">
+
+        <h2 class="selectHeader">Cost of Program:</h2>
+        <select id="cost">
+          <option value="free">Free</option>
+          <option value="25">$25 or Less</option>
+          <option value="50">$50 or Less</option>
+          <option vlaue="over50">Over $50</option>
+        </select>
+
+        <button id="submitDestination">Submit</button>
       </form>
 
   <!-- <h1> Finding Your Destination</h1>

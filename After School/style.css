@@ -117,6 +117,14 @@ button.signUp{
 button:hover{
   background-color: transparent;
 }
+form > .selectHeader {
+  display: inline-block;
+}
+
+form > select {
+  display: inline-block;
+  margin: 0 auto;
+}
 
 
 /*Map*/
