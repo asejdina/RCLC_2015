@@ -1,0 +1,100 @@
+/* Home Page */
+
+body{
+  background-color: rgba(34, 139, 255, 1);
+}
+
+h1{
+  text-align: center;
+  color:white;
+}
+
+h2{
+  text-align: center;
+  color:#46CC38
+}
+
+h3{
+  color:#46CC38
+}
+
+#logo {
+  background-image: url("./images/Logo.png");
+  width: 70%;
+  height: 400px;
+  background-size: 40%;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+button.signUp{
+  width: 150px;
+  height: 50px;
+  background-color:#89CCCC;
+  color: white;
+  font-size: 1.5em;
+  border: 2px solid white;
+  margin-left: 44%;
+  margin-top: 2%;
+  position: relative;
+  display: block;
+}
+button:hover{
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+#activitySelect {
+  height: 100px;
+  background-color: #960885;
+  padding:10px 100px;
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#activitySelect > select, #activitySelect > h1 {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+
+/*Map*/
+
+#map {
+  width: 90%;
+  height: 600px;
+  margin: 0 5%;
+}
+
+/* Registration */
+
+#wrapper {
+  width: 900px;
+  margin: 20px auto;
+}
+
+form {
+  padding: 0 30%;
+}
+
+form > h2 {
+  background-color: transparent;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  height: 30px;
+  font-size: 1.5em;
+}
+
+#wrapper > select {
+  margin-left: 46%;
+}

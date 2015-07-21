@@ -58,11 +58,12 @@ button:hover {
 }
 
 .biobox  {
-     background-color:#pink;
-     width:24%;
-     height: 400px;
-     position: relative;
-     display: inline-block;
+  background-color:#pink;
+  width: 20%;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin: 2%;
 }
 
 .image  {
@@ -70,12 +71,24 @@ button:hover {
   width: 100%;
   height: 50%;
   margin: 0 auto;
-}
-.description {
-  overflow: scroll;
-  height: inherit;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+
+.description {
+  overflow: scroll;
+  height: 50%;
+}
+
+.biobox > p {
+  font-size: 1em;
+}
+
+.description > p {
+  font-size: 1em;
+}
 
 /*//===========================================//*/
 
@@ -98,13 +111,7 @@ textarea {
   margin: 30px 0px 10px 95px;
 }
 
-.image {
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 300px;
-  height: 200px;
-}
+
 
 #about {
   width: 500px

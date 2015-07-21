@@ -21,10 +21,10 @@ $(function() {
           var photoURL = object.get("photo").url();
           var html =  '<div class="biobox">' +
                       '<div class="image" style="background-image: url('+photoURL+')""></div>' +
-                      '<h1>' + object.get('name') + '</h1>' +
+                      '<div class="description">' +
+                      '<h2>' + object.get('name') + '</h2>' +
                       '<p>Age Range:' + object.get('agerange') + '</p>' +
-                      '<div class="description">' + '<p>' +
-                      object.get('comments') + '</p>' +
+                      '<p>' + object.get('comments') + '</p>' +
                       '</div>' +
                       '</div>';
 
