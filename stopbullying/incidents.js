@@ -19,11 +19,11 @@ $(function() {
           var object = results[i];
           var html =  '<div class="oneresult">' +
                       '<h1>issue type</h1>' +
-                      object.get('issuetype') +
+                      '<p>' + object.get('issuetype') + '</p>' +
                       '<h1>location</h1>' +
-                      object.get('location') +
+                      '<p>' + object.get('location') + '</p>' +
                       '<h1>issue</h1>' +
-                      object.get('issue') +
+                      '<p>' + object.get('issue') + '</p>' +
                       '</div>';
           $("#results").append(html);
         }

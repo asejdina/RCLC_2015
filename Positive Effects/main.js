@@ -8,8 +8,6 @@ $(function() {
   var map;
   var array = [];
 
-
-
   $(document).ready(init);
   // Ensure that each todo created has `content`.
   function init() {
@@ -17,6 +15,7 @@ $(function() {
     $('.newTag').on('click', newTag);
     $('.closeModal').on('click', closeModal);
     $('#submitPhoto').on('click', photoUpload);
+    checkTypeGood();
 
     var tag = Parse.Object.extend('Tag');
     var query = new Parse.Query(tag);
@@ -29,12 +28,27 @@ $(function() {
           var latitude = location.latitude;
           var longitude = location.longitude;
           var id = object.id;
-          createMarker(latitude, longitude, id);
+          //var icon = object.get('type');
+          if(object.get('type') === 'good'){
+            var icon = ('./images/greenMarker.png');
+          } else {
+            var icon = ('./images/pinkMarker.png');
+          }
+          createMarker(latitude, longitude, id, icon);
         }
       },
       error: function(error) { alert('Error: ' + error.code + ' ' + error.message); }
     });
     initMap(41.67, -86.25, 12);
+  }
+
+//=========== Checkbox Check
+
+  function checkTypeGood(){
+    if($('#checkGood').checked === true) {
+      console.log('True');
+    }
+
   }
 
 
@@ -57,9 +71,9 @@ $(function() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
 
-  function createMarker(lat, lng, id){
+  function createMarker(lat, lng, id, icon){
     var latLng = new google.maps.LatLng(lat,lng);
-    var marker = new google.maps.Marker({map: map, position: latLng, id: id});
+    var marker = new google.maps.Marker({map: map, position: latLng, id: id, icon: icon});
 
     google.maps.event.addListener(marker, 'click', function() {
         var tag = Parse.Object.extend('Tag');
@@ -70,18 +84,20 @@ $(function() {
             for (var i = 0; i < results.length; i++) {
               var object = results[i];
               var photoURL = object.get("photo").url();
+              console.log(object.createdAt);
               var html =  '<div class="artWrapper">' +
                           '<div class="artInfo">' +
                           '<h2>Area:</h2>' +
                           object.get('area') +
                           '<h2>Time Registered:</h2>' +
-                          object.get('createdAt') +
+                          object.createdAt +
                           '<h2>Details:</h2>' +
                           object.get('comments') +
                           '</div>' +
                           '<div class="image" style="background-image: url('+photoURL+')""></div>' +
                           '</div>';
-              $('#artModal').append(html);
+              $('#artModalInfo').empty();
+              $('#artModalInfo').append(html);
             }
           },
           error: function(error) { alert('Error: ' + error.code + ' ' + error.message); }
@@ -90,10 +106,6 @@ $(function() {
         $('#artModal').css('display', 'block');
       });
   }
-
-  // =========ART MODAL
-
-
 
 //=============Form Submission
 

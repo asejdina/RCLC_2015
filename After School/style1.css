@@ -64,13 +64,7 @@ a {
 }
 
 
-/*Map*/
 
-#map {
-  width: 90%;
-  height: 600px;
-  margin: 0 5%;
-}
 
 /* Registration */
 
@@ -97,4 +91,12 @@ input {
 
 #wrapper > select {
   margin-left: 46%;
+}
+
+/*Map*/
+
+#map {
+  width: 90%;
+  height: 600px;
+  margin: 0 5%;
 }
