@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="./style.css">
       <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
       <script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
       <script src="register.js"></script>
 
   </head>
@@ -17,16 +18,25 @@
       <h1>Register Your Destination</h1>
       <form>
         <h2>Destination Name:</h2>
-        <input type="text" name="destinationName" id="destinationName">
+        <input type="text" name="name" id="name">
 
         <h2>Address:</h2>
-        <input type="text" name="destinationAddress" id="destinationAddress">
+        <input type="text" name="address" id="address">
 
         <h2>Programs:</h2>
-        <input type="text" name="destinationPrograms" id="desitinationPrograms">
+        <input type="text" name="programs" id="programs">
 
         <h2>Website:</h2>
         <input type="text" name="website" id="website">
+
+        <h2 class="selectHeader">Type of Program:</h2>
+        <select id="type">
+          <option value="sports">Sports</option>
+          <option value="camps">Camps</option>
+          <option value="music">Music</option>
+          <option vlaue="arts">Arts and Crafts</option>
+          <option vlaue="events">Events</option>
+        </select>
 
         <h2 class="selectHeader">Cost of Program:</h2>
         <select id="cost">
