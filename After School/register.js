@@ -8,15 +8,11 @@ Parse.initialize('L6ShGalrKTMHYyEZY4c9sLqPWQIjWMTz08Hf9hdw',
   $(document).ready(init);
 
   function init() {
-    console.log('you are going');
     $('#submitDestination').on('click', newDestination);
   }
 
   function newDestination() {
-    console.log('inside function');
-
     var destination = new Parse.Object('Destination');
-
     var name = $('#name').val();
     var address = $('#address').val();
     var programs = $('#programs').val();
@@ -36,11 +32,9 @@ Parse.initialize('L6ShGalrKTMHYyEZY4c9sLqPWQIjWMTz08Hf9hdw',
         alert('SAVED!!!');
         //window.location.replace('home.html');
       },
-      error: function(error){
+      error: function(destination, error){
         alert('error code '+error.code+': '+error.message);
       }
     });
   }
-
-
 })();
