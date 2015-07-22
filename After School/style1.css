@@ -122,3 +122,24 @@ input {
   color: white;
   text-align: center;
 }
+
+/*About Page*/
+
+#about {
+  text-align: center;
+  padding: 0 20%;
+}
+
+.bgImage {
+  width: 20%;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 40%;
+}
+
+.ambria {background-image:url('./images/ambria.JPG')}
+.cecilly {background-image:url('./images/cecilly.JPG')}
+.christian {background-image:url('./images/christian.JPG')}
+.amiri {background-image:url('./images/amiri.JPG')}
