@@ -65,7 +65,7 @@ a {
 }
 
 #activitySelect {
-  height: 100px;
+  height: 50px;
   background-color: #960885;
   padding:10px 100px;
   border: 2px solid white;
@@ -73,7 +73,7 @@ a {
   margin-bottom: 10px;
 }
 
-#activitySelect > select, #activitySelect > h1 {
+#activitySelect > select, #activitySelect > h2 {
   position: relative;
   display: inline-block;
   margin-right: 50px;
@@ -109,6 +109,16 @@ input {
 
 #map {
   width: 90%;
-  height: 600px;
+  height: 300px;
   margin: 0 5%;
+}
+
+#info {
+  background-color: #960885;
+  padding:10px 100px;
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
 }

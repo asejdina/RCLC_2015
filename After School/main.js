@@ -62,25 +62,27 @@ $(function() {
           success: function(results){
             for (var i = 0; i < results.length; i++) {
               var object = results[i];
-              var photoURL = object.get("photo").url();
-              var html =  '<div class="artWrapper">' +
-                          '<div class="artInfo">' +
-                          '<h2>Area:</h2>' +
-                          object.get('area') +
-                          '<h2>Time Registered:</h2>' +
-                          object.get('createdAt') +
-                          '<h2>Details:</h2>' +
-                          object.get('comments') +
+
+              var html =  '<div class="infoWrapper">' +
+                          '<div class="destInfo">' +
+                          '<h2>Destination:</h2>' +
+                          object.get('name') +
+                          '<h2>Address:</h2>' +
+                          object.get('address') +
+                          '<h2>Cost of Programs:</h2>' +
+                          object.get('cost') +
+                          '<h2>Programs:</h2>' +
+                          object.get('programs') +
                           '</div>' +
-                          '<div class="image" style="background-image: url('+photoURL+')""></div>' +
                           '</div>';
-              $('#artModal').append(html);
+              $('#info').empty();
+              $('#info').append(html);
             }
           },
           error: function(error) { alert('Error: ' + error.code + ' ' + error.message); }
         });
 
-        $('#artModal').css('display', 'block');
+        $('#info').css('display', 'block');
       });
   }
 
