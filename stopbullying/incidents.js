@@ -18,12 +18,18 @@ $(function() {
         for (var i = 0; i < results.length; i++) {
           var object = results[i];
           var html =  '<div class="oneresult">' +
-                      '<h1>issue type</h1>' +
+                      '<div class="section">' +
+                      '<h3>Issue Type:</h3>' +
                       '<p>' + object.get('issuetype') + '</p>' +
-                      '<h1>location</h1>' +
+                      '</div>' +
+                      '<div class="section">' +
+                      '<h3>Location:</h3>' +
                       '<p>' + object.get('location') + '</p>' +
-                      '<h1>issue</h1>' +
+                      '</div>' +
+                      '<div class="section">' +
+                      '<h3>Issue:</h3>' +
                       '<p>' + object.get('issue') + '</p>' +
+                      '<div>' +
                       '</div>';
           $("#results").append(html);
         }
