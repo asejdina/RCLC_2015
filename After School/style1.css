@@ -28,19 +28,35 @@ h3{
   background-repeat: no-repeat;
 }
 
-button.signUp{
+#buttonSection {
+  width: 100%;
+  padding: 0 38%;
+}
+
+button {
   width: 150px;
   height: 50px;
+  font-size: 1.5em;
+  margin-top: 2%;
+  position: relative;
+  display: inline-block;
+}
+
+button.signUp {
   background-color:#89CCCC;
   color: white;
   font-size: 1.5em;
   border: 2px solid white;
-  margin-left: 44%;
-  margin-top: 2%;
-  position: relative;
-  display: block;
 }
-button:hover{
+
+button.about {
+  background-color:#89CCCC;
+  color: white;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+button:hover {
   background-color: transparent;
 }
 
@@ -62,8 +78,6 @@ a {
   display: inline-block;
   margin-right: 50px;
 }
-
-
 
 
 /* Registration */

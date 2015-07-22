@@ -20,13 +20,14 @@ $(function() {
           var object = results[i];
           var id = object.id;
           var address = object.get('address');
+          var type = object.get('type');
 
           var geocoder = new google.maps.Geocoder();
           geocoder.geocode({ 'address': address }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
               var latitude = results[0].geometry.location.lat();
               var longitude = results[0].geometry.location.lng();
-              createMarker(latitude, longitude, id);
+              createMarker(latitude, longitude, id, type);
             } else {
               alert("Request failed.")
             }
@@ -49,9 +50,9 @@ $(function() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
 
-  function createMarker(lat, lng, id){
+  function createMarker(lat, lng, id, type){
     var latLng = new google.maps.LatLng(lat,lng);
-    var marker = new google.maps.Marker({map: map, position: latLng, id: id});
+    var marker = new google.maps.Marker({map: map, position: latLng, id: id, type: type});
 
     google.maps.event.addListener(marker, 'click', function() {
         var destination = Parse.Object.extend('Destination');
