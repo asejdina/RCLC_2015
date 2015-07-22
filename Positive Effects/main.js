@@ -84,7 +84,6 @@ $(function() {
             for (var i = 0; i < results.length; i++) {
               var object = results[i];
               var photoURL = object.get("photo").url();
-              console.log(object.createdAt);
               var html =  '<div class="artWrapper">' +
                           '<div class="artInfo">' +
                           '<h2>Area:</h2>' +

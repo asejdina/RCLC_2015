@@ -18,7 +18,7 @@ h3{
   color:#46CC38
 }
 
-#logo {
+.logo {
   background-image: url("./images/Logo.png");
   width: 70%;
   height: 400px;
@@ -83,12 +83,12 @@ a {
 /* Registration */
 
 #wrapper {
-  width: 900px;
-  margin: 20px auto;
+  width: 90%;
+  margin: 5px;
 }
 
 form {
-  padding: 0 30%;
+  padding: 0 40%;
 }
 
 form > h2 {
@@ -101,6 +101,15 @@ input {
   width: 100%;
   height: 30px;
   font-size: 1.5em;
+}
+
+#type, #cost {
+  margin-left: 25%;
+}
+
+#submitDestination {
+  margin: 5% 25%;
+  display: block;
 }
 
 
@@ -143,3 +152,43 @@ input {
 .cecilly {background-image:url('./images/cecilly.JPG')}
 .christian {background-image:url('./images/christian.JPG')}
 .amiri {background-image:url('./images/amiri.JPG')}
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 450px) {
+
+  .logo {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  #buttonSection {
+    padding-left: 27%;
+  }
+
+  button {
+    position: relative;
+    display: block;
+  }
+
+  #activitySelect {
+    height: 50px;
+    padding: 5px 0 5px 50px;
+  }
+
+  #activitySelect > select {
+    margin: 5% 0;
+  }
+
+  #activitySelect > h2 {
+    display: none;
+  }
+
+  form {
+    padding: 0;
+  }
+
+}
