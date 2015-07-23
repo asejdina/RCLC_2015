@@ -4,21 +4,20 @@ body, html {
   background-color: orange;
 }
 
-
-#topbar {
+.topbar {
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin: 0 auto;
   padding: 0 auto;
   display: inline-block;
   position: relative;
 }
 
-#logo{
+.logo{
   position: relative;
   display: inline-block;
   height: 100%;
-  width: 10%;
+  width: 20%;
   margin-left: 5%;
   background-image: url('./images/logo.png');
   background-size: contain;
@@ -79,6 +78,10 @@ button:hover {
   margin: 2%;
 }
 
+.aboutUsBottom {
+  display: none;
+}
+
 
 /*===========================================*/
 
@@ -87,19 +90,26 @@ color:limegreen;
 }
 
 #wrapperAbout {
-  width: 800px;
-  margin: 20px auto;
-}
-
-img {
-  width: 200px;
-  height: 300px;
+  width: 80%;
+  margin: 10%;
 }
 
 #type {
   display: inline-block;
 }
 
+.bioImg {
+  width: 50%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sha-nia{background-image:url('./images/shania.JPG');}
+.daniela{background-image:url('./images/daniela.JPG');}
+.skylar{background-image:url('./images/clayHigh.jpeg');}
+.braylon{background-image:url('./images/braylon.JPG');}
+.antonio{background-image:url('./images/antonio.JPG');}
 
 /*===========================================*/
 
@@ -109,7 +119,6 @@ img {
   display: none;
   width: 350px;
   height: 450px;
-  z-index: 1;
   background-color: white;
   border: 2px solid limegreen;
   border-radius: 10px;
@@ -184,4 +193,92 @@ input {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+/*==================Media===============*/
+
+@media only screen and (max-width: 450px) {
+
+  #map {
+    margin-top: 5%;
+    height: 450px;
+  }
+
+  .topbar {
+    height: 100px;
+  }
+
+  #wrapper {
+    width: 26%;
+    margin: 0 auto;
+    height: 95%;
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+
+  #wrapper > h5 {
+    display: none;
+  }
+
+  #wrapper > h3 {
+    display: block;
+  }
+
+  #checkGood, #checkBad {
+    display: inline-block;
+  }
+
+  #buttonWrapper {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .newTag {
+    margin-top: 15%;
+  }
+
+  .aboutUsTop {
+    display: none;
+  }
+
+  .aboutUsBottom {
+    display: block;
+    margin: 0 30%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #formModal, #artModal {
+    width: 90%;
+    height: 450px;
+    top: 15%;
+    left: 5%;
+  }
+
+  #artModal {
+    font-size: 0.8em;
+    overflow: scroll;
+  }
+
+  .image {
+    width: 94%;
+    height: 160px;
+    background-position: center;
+  }
+
+  #wrapperAbout {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2%;
+  }
+
+  .bioImg {
+    height: 100px;
+  }
+
+
 }

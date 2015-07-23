@@ -1,6 +1,6 @@
 #wrapper {
-  width: 900px;
-  margin: 20px auto;
+  width: 96%;
+  margin: 2%;
 }
 
 body {
@@ -23,6 +23,14 @@ p {
     color: white;
 }
 
+#headerImage {
+  height: 500px;
+  width: 80%;
+  margin: 0 10%;
+  background:url('./images/sbcover.jpg') no-repeat center;
+  background-size: contain;
+}
+
 button {
   width: 175px;
   height: 75px;
@@ -37,9 +45,7 @@ button:hover {
 }
 
 #logo {
-  background-image: url('./images/logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('./images/logo.png') no-repeat center;
   background-size: contain;
   width: 100%;
   height: 200px;
@@ -51,8 +57,7 @@ button:hover {
 #bios {
   width: 100%;
   padding: 0 auto;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 10px 0;
   border-top: 2px solid blue;
   padding-top: 40px;
 }
@@ -114,8 +119,10 @@ textarea {
 
 
 #about {
-  width: 500px
-  height: 600px
+  width: 80%;
+  height: 350px;
+  text-align: center;
+  padding: 0 10%;
 }
 
 #image{
@@ -125,4 +132,45 @@ textarea {
 
 #wrapper {
   text-align: center;
+}
+
+
+
+/*MEDIA*/
+
+
+@media only screen and (max-width: 450px) {
+
+  #wrapper > h1 {
+    font-size: 2em;
+  }
+
+  #about {
+    height: 250px;
+  }
+
+  #about > h1 {
+    font-size: 2em;
+  }
+
+  #about > p {
+    font-size: 1em;
+  }
+
+  #headerImage {
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    background:url('./images/sbcover.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+
+  .biobox {
+    width: 98%;
+
+  }
+
+
+
 }
