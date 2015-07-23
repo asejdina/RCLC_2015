@@ -6,7 +6,7 @@ Parse.initialize('L6ShGalrKTMHYyEZY4c9sLqPWQIjWMTz08Hf9hdw',
 $(function() {
 
   var map;
-  var array = [];
+  var markers = [];
 
 
   $(document).ready(init);
@@ -21,13 +21,26 @@ $(function() {
           var object = results[i];
           var id = object.id;
           var address = object.get('address');
+          var cost = object.get('cost');
 
-          createMarker(address, id);
+          createMarker(address, id, cost);
         }
       },
       error: function(error) { alert('Error: ' + error.code + ' ' + error.message); }
     });
 
+    //initMap(41.67, -86.25, 12);
+
+    $('.cost').change(function(){
+      var coordinate = $('select option:selected').val();
+      console.log(coordinate);
+      for(var i = 0; i<markers.length; i++){
+        if(markers[i].cost != coordinate)
+        {
+          markers[i].setVisible(false); //hide the markers whose id is not school
+        }
+      }
+    });
     initMap(41.67, -86.25, 12);
   }
 
@@ -42,7 +55,7 @@ $(function() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
 
-  function createMarker(address, id){
+  function createMarker(address, id, cost){
     var geocoder = new google.maps.Geocoder();
 
     geocoder.geocode({ 'address': address }, function (results, status) {
@@ -50,7 +63,8 @@ $(function() {
         var lat = results[0].geometry.location.lat();
         var lng = results[0].geometry.location.lng();
         var latLng = new google.maps.LatLng(lat,lng);
-        var marker = new google.maps.Marker({map: map, position: latLng, id: id});
+        var marker = new google.maps.Marker({map: map, position: latLng, id: id, cost: cost});
+        markers.push(marker);
 
         google.maps.event.addListener(marker, 'click', function() {
             var destination = Parse.Object.extend('Destination');

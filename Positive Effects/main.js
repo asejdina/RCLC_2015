@@ -6,7 +6,7 @@ Parse.initialize('UdGQSgye4B4IkEZwax2e1EwHwMQXmdYIEvzgeGu2',
 $(function() {
 
   var map;
-  var array = [];
+  var markers = [];
 
   $(document).ready(init);
   // Ensure that each todo created has `content`.
@@ -15,7 +15,7 @@ $(function() {
     $('.newTag').on('click', newTag);
     $('.closeModal').on('click', closeModal);
     $('#submitPhoto').on('click', photoUpload);
-    checkTypeGood();
+    //$('.cBox').on('click', checkBox);
 
     var tag = Parse.Object.extend('Tag');
     var query = new Parse.Query(tag);
@@ -28,13 +28,13 @@ $(function() {
           var latitude = location.latitude;
           var longitude = location.longitude;
           var id = object.id;
-          //var icon = object.get('type');
+          var type = object.get('type');
           if(object.get('type') === 'good'){
             var icon = ('./images/greenMarker.png');
           } else {
             var icon = ('./images/pinkMarker.png');
           }
-          createMarker(latitude, longitude, id, icon);
+          createMarker(latitude, longitude, id, type, icon);
         }
       },
       error: function(error) { alert('Error: ' + error.code + ' ' + error.message); }
@@ -44,13 +44,33 @@ $(function() {
 
 //=========== Checkbox Check
 
-  function checkTypeGood(){
-    if($('#checkGood').checked === true) {
-      console.log('True');
-    }
-
-  }
-
+  // function checkBox() {
+  //   if($('.good:checked').length > 0){
+  //     markers = jQuery.each(markers, function(m){
+  //       var type = m.type;
+  //       if(type === 'good'){
+  //         console.log(type);
+  //       }
+  //
+  //
+  //
+  //     });
+  //   }
+  //   if($('.bad:checked').length > 0){
+  //     markers = jQuery.map(markers, function(m){
+  //       console.log(m.type);
+  //     });
+  //   }
+  // }
+  //
+  // function clearMarkers() {
+  //   setAllMap(null);
+  // }
+  // function setAllMap(map) {
+  //   for (var i = 0; i < markers.length; i++) {
+  //     markers[i].setMap(map);
+  //   }
+  // }
 
 
 // =========FORM MODAL
@@ -71,9 +91,10 @@ $(function() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
 
-  function createMarker(lat, lng, id, icon){
+  function createMarker(lat, lng, id, type, icon){
     var latLng = new google.maps.LatLng(lat,lng);
-    var marker = new google.maps.Marker({map: map, position: latLng, id: id, icon: icon});
+    var marker = new google.maps.Marker({map: map, position: latLng, id: id, type: type, icon: icon});
+    markers.push(marker);
 
     google.maps.event.addListener(marker, 'click', function() {
         var tag = Parse.Object.extend('Tag');

@@ -225,7 +225,7 @@ input {
     display: block;
   }
 
-  #checkGood, #checkBad {
+  #gvbBox {
     display: inline-block;
   }
 
