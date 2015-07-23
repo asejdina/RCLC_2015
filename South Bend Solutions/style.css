@@ -101,7 +101,7 @@ button:hover {
 form {
   background-color: blue;
   width: 40%;
-  height: 400px;
+  height: 500px;
   text-align: center;
   margin-left:30%;
   border: 2px solid white;
@@ -134,6 +134,14 @@ textarea {
   text-align: center;
 }
 
+textarea {
+  margin: 5% 37%;
+}
+
+#submit {
+  margin: 5% 40%;
+  display: block;
+}
 
 
 /*MEDIA*/
@@ -169,6 +177,21 @@ textarea {
   .biobox {
     width: 98%;
 
+  }
+
+  form {
+    width: 90%;
+    height: 500px;
+    margin: 0 5%;
+    border: 2px solid white;
+  }
+
+  textarea {
+    margin-left: 20%;
+  }
+
+  #submit {
+    margin: 5% 20%;
   }
 
 
