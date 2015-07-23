@@ -11,7 +11,8 @@ Parse.initialize('L6ShGalrKTMHYyEZY4c9sLqPWQIjWMTz08Hf9hdw',
     $('#submitDestination').on('click', newDestination);
   }
 
-  function newDestination() {
+  function newDestination(event) {
+    event.preventDefault();
     var destination = new Parse.Object('Destination');
     var name = $('#name').val();
     var address = $('#address').val();
@@ -29,8 +30,7 @@ Parse.initialize('L6ShGalrKTMHYyEZY4c9sLqPWQIjWMTz08Hf9hdw',
 
     destination.save(null, {
       success: function(destination){
-        alert('SAVED!!!');
-        //window.location.replace('home.html');
+        window.location.replace('home.html');
       },
       error: function(destination, error){
         alert('error code '+error.code+': '+error.message);

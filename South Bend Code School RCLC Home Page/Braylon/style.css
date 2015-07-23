@@ -1,0 +1,14 @@
+ body {
+    background-image: url("./images/jordan.jpg")
+    ;
+    font-family:georgia;
+    color: white;
+  }
+
+
+#image {
+  background-image: url("./images/IMG_7702.JPG");
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+}

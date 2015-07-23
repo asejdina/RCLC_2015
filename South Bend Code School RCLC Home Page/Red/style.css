@@ -1,0 +1,32 @@
+body {
+  background-color:red;
+  font-family:Arial;
+  color: blue;
+  text-align: center
+}
+
+#about {
+font-family: cursive;
+color: yellow;
+}
+
+h1 {
+  color: blue;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#image {
+  background-image: url("./images/IMG_7684.JPG");
+  width: 1900px;
+  height: 800px;
+  background-size: contain;
+}
+
+#pokemon {
+  background-image: url("./images/n.jpg");
+  width: 20%
+  height: 500
+}

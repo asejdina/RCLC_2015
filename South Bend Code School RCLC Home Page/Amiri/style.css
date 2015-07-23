@@ -1,0 +1,30 @@
+body {
+  background-color: #2EB75D;
+  font-family: Georgia;
+  color: #032855;
+  text-align: center;
+}
+
+h1{
+  color: #2F577B
+;
+  font-family: Helvetica
+}
+
+#titles {
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+    text-align; center;
+}
+#image {
+    background-image:url("./images/IMG_7815.JPG");
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+  }
+
+#about {
+  width: 500px;
+  height: 600px;
+}

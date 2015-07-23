@@ -11,7 +11,8 @@ $(function() {
     $('#submit').on('click', newIncident);
   }
 
-  function newIncident() {
+  function newIncident(event) {
+    event.preventDefault();
     var incident = new Parse.Object('Incident');
     var issue = $('#issue').val();
     var location = $('#location').val();

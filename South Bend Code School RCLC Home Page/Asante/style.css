@@ -1,0 +1,16 @@
+body{
+  background-color:#B2D7F4;
+font-family:Georgia;
+color:red;
+}
+
+
+h1{
+  color:black;
+}
+
+#image{
+  background-image: url("./images/IMG_7871.JPG");
+  height:1000px;
+  width: 100%;
+}

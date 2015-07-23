@@ -1,0 +1,22 @@
+body {
+  background-image: url("./images/shoe.jpg");
+  font-family: Georgia;
+  color: purple;
+  text-align: center;
+}
+
+h1{
+  color:blue;
+}
+
+#about {
+  width:588px;
+  height:688px
+}
+
+#image {
+  width: 188px;
+  height: 188px;
+  background-image:  url("./images/IMG_7723.JPG");
+  background-size: cover; 
+}

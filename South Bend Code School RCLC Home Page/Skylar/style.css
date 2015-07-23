@@ -1,0 +1,36 @@
+body {
+  background-color: green;
+  font-family: times;
+  color: #BCB215;
+  text-align: center;
+}
+
+h1 {
+  color: #DF0913;
+  text-align: left;
+}
+
+#about {
+  background-color: orange;
+  font-family: arial;
+  color: red;
+  text-align: left;
+}
+
+h2 {
+  color: #1729A7;
+}
+
+#issues {
+  background-color: purple;
+  font-family: cursive;
+  color: green;
+  text-align: right
+}
+
+#image {
+  background-image: url("./images/IMG_7845.JPG");
+  width: 1240px;
+  height: 400px;
+ background-size: cover;
+}

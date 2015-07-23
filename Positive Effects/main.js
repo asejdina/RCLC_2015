@@ -130,7 +130,8 @@ $(function() {
 //=============Form Submission
 
 
-  function photoUpload(){
+  function photoUpload(event){
+    event.preventDefault();
     var fileUploadControl = $('#profilePhotoFileUpload')[0];
       if (fileUploadControl.files.length > 0) {
         var file = fileUploadControl.files[0];

@@ -1,0 +1,24 @@
+  body {
+    background-color: purple;
+    font-family: Georgia;
+    color: red;
+    text-align: center;
+  }
+
+
+  h1 {
+    color: blue;
+  }
+
+  #about {
+    width: 500px
+    height: 600px
+  }
+
+
+
+
+
+#image{
+  background-image: uurl("./images/trackng.jpeg");
+}

@@ -1,0 +1,17 @@
+body {
+   background-color: #E41A6A;
+   font-family: Garamond;
+   color: white;
+   text-align; center;
+   background-image: url("./images/florida.jpg");
+   height: 400px
+   width:400%
+ }
+ h1 {
+   color: black;
+
+ }
+#about {
+ background-color: #E41A6A;
+
+ }

@@ -1,0 +1,56 @@
+body {
+  background-color:#F5A999;
+  font-family: Courier;
+  color: white;
+  text-align:left;
+}
+
+h1{
+  background-color: #B9C1B2;
+  font-family: Arial;
+  text-align:center;
+}
+h2 {
+  background-color: #B3CBBD;
+  text-align:center;
+
+}
+
+#about {
+font-family: cursive;
+color: black;
+width:100 px;
+height:100 px;
+}
+
+#issues {
+  font-family: pupcat;
+  color:white;
+}
+
+#what {
+  font-family: cursive;
+  color: black;
+}
+
+#websites {
+  font-family: pupcat;
+  color: white;
+}
+
+#videos{
+  font-family: cursive;
+  color: black
+}
+
+#image{
+  background-image: url("./images/IMG_0289.JPG");
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+
+}
+
+#where{
+  font-family: pupcat
+}

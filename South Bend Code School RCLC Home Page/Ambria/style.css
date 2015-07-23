@@ -1,0 +1,25 @@
+body{
+  background-color:#FF5B7E;
+  font-family:Georgia;
+  color: #81FE72;
+  text-align: center;
+}
+
+#about{
+  color: turquoise;
+  }
+#issue{
+  color: turquosie;
+  }
+#image{
+  background-image: url("./images/IMG_7778.JPG");
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+
+h4 {
+  font-family: Garamond;
+  color: blue;
+  text-align: left;
+}

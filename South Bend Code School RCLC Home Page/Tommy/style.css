@@ -1,0 +1,27 @@
+body {
+     background-color:whites;
+  font-family: :Georgia;
+color:blue;
+text-alight: right;
+
+}
+
+
+
+
+#titles {
+}
+
+
+
+
+
+
+
+
+#image {
+background-image: url("./images/IMG_7695.JPG");
+width:200px;
+height:123px;
+background-size: contain;
+}

@@ -1,0 +1,23 @@
+  body{
+    background-color:#3F02B1;
+   font-family: Arial;
+   color: #0B94CF;
+   text-align: center;
+
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#about{
+  font-family: Garamond;
+}
+
+
+#image{
+  width: 100%;
+  height: 100px;
+  background-image: url("./images/images/IMG_7807.JPG");
+  background-size: contain;
+}
