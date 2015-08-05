@@ -254,15 +254,17 @@ input {
 
   #formModal, #artModal {
     width: 90%;
-    height: 450px;
-    top: 15%;
+    height: 400px;
+    top: 5%;
     left: 5%;
-  }
-
-  #artModal {
     font-size: 0.8em;
     overflow: scroll;
   }
+
+  form.tagit {
+    height: 50%;
+  }
+
 
   .image {
     width: 94%;

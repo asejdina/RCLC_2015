@@ -16,6 +16,23 @@ a, a:hover, a:visited {
   padding: 0 auto;
 }
 
+h1 {
+  margin: 0 auto;
+  font-size: 3em;
+}
+
+.logo {
+  width: 24%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #ourtown {
   width: 100%;
   height: 200px;
@@ -60,7 +77,7 @@ a, a:hover, a:visited {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;;
+  overflow: hidden;
 }
 
 .name {
@@ -77,6 +94,11 @@ a, a:hover, a:visited {
   color: black;
   text-align: center;
 }
+
+#sbSolutions {background-image:url('./images/sbsolutions.png');}
+#findingYourDestination {background-image:url('./images/findingyourdestination.png');}
+#stopBullying {background-image:url('./images/stopbullying.png');}
+#positiveEffects {background-image:url('./images/positiveeffects.png');}
 
 
 #rclc:hover {background-image:url('./images/RCLC.jpg');}
@@ -240,170 +262,3 @@ a, a:hover, a:visited {
   background-position: center;
   overflow: hidden;
 }
-
-
-
-
-/*
-#rclc {background-image:url('./images/RCLC.jpg');}
-#ambria {background-image:url('./images/Ambria.JPG');}
-#amiri {background-image:url('./images/Amiri.JPG');}
-#antonio {background-image:url('./images/Antonio.JPG');}
-#asante {background-image:url('./images/Asante.JPG');}
-#braylon {background-image:url('./images/Braylon.JPG');}
-#breauna {background-image:url('./images/BreAuna.JPG');}
-#caribia {background-image:url('./images/Caribia.JPG');}
-#cecilly {background-image:url('./images/Cecilly.JPG');}
-#christian {background-image:url('./images/Christian.JPG');}
-#dama {background-image:url('./images/Dama.JPG');}
-#daniela {background-image:url('./images/Daniela.JPG');}
-#florida {background-image:url('./images/Florida.JPG');}
-#kiara {background-image:url('./images/Kiara.JPG');}
-#maya {background-image:url('./images/Maya.JPG');}
-#red {background-image:url('./images/Red.JPG');}
-#ray {background-image:url('./images/RCLCfrog.jpg');}
-#sha-nia {background-image:url('./images/Sha-Nia.JPG');}
-#skylar {background-image:url('./images/Skylar.JPG');}
-#tommy {background-image:url('./images/Tommy.JPG');}
-
-#rclc:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/RCLC.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#ambria:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Ambria.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#amiri:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Amiri.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#antonio:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Antonio.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#asante:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Asante.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#braylon:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Braylon.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#breauna:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/BreAuna.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#caribia:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Caribia.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#cecilly:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Cecilly.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#christian:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Christian.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#dama:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Dama.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#daniela:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Daniela.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#florida:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Florida.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#kiara:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Kiara.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#maya:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Maya.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#ray:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/RCLCfrog.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#red:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Red.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#sha-nia:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Sha-Nia.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#skylar:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Skylar.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-#tommy:hover {
-  background:linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0.4)),url('./images/Tommy.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
- */

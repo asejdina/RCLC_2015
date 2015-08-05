@@ -10,8 +10,7 @@ $(function() {
     $('#submit').on('click', storyUpload);
   }
 
-  function storyUpload(event){
-    event.preventDefault();
+  function storyUpload(){
     var fileUploadControl = $('#profilePhotoFileUpload')[0];
     if (fileUploadControl.files.length > 0) {
       var file = fileUploadControl.files[0];
